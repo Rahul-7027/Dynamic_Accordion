@@ -1,19 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f3f4f6;
-}
 
 .accordion-container {
+  align-items: center;
   width: 90%;
   max-width: 600px;
   background: #ffffff;
