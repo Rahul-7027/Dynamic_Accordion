@@ -5,8 +5,8 @@ const User = ({ title, body, isActive, setIsActive, toggle }) => {
 
     return (
         <div >
-            <div class="accordion-item" onClick={toggle}>
-                <div class="accordion-content">
+            <div className="accordion-item" onClick={toggle}>
+                <div className="accordion-content">
                     <div>{isActive ? "-" : "+"}</div>
                     <h2>{title}</h2>
                     {isActive && <div className="accordion-content">{body}</div>}

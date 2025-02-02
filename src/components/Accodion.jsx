@@ -31,7 +31,7 @@ const Accodion = () => {
         <>
             <h1>Accordion</h1>
             {data.map((element, index) => (
-                <div class="accordion-container" key={index}>
+                <div className="accordion-container" key={index}>
                     <User title={element.title} body={element.body} isActive={isActive === element.id} setIsActive={setIsActive} toggle={() => handleOpen(element.id)} />
                 </div>
 
