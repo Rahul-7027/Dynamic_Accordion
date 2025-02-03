@@ -10,7 +10,6 @@ const Accodion = () => {
         try {
             const response = await fetch("https://jsonplaceholder.typicode.com/posts");
             const newRes = await response.json();
-            console.log(newRes); // Check if the data is correctly fetched
             setdata(newRes);
         } catch (error) {
             console.error("Failed to fetch data", error);

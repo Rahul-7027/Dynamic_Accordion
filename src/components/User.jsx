@@ -1,7 +1,6 @@
 import "./accordion.css"
 
 const User = ({ title, body, isActive, setIsActive, toggle }) => {
-    console.log(isActive)
 
     return (
         <div >

@@ -1,6 +1,7 @@
 
 import './App.css'
 import Accodion from './components/Accodion'
+import FooterData from './components/Footer/FooterData'
 import Navbardata from './components/Navbar/Navbardata'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
     <Navbardata/>
       <Accodion/>
+      <FooterData/>
     </>
   )
 }
