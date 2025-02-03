@@ -1,48 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: right;
+  padding: 10px 0;
+}
+
+.menu-item {
+  list-style: none;
+  margin: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #f39c12;
+}
+
+/* Responsive for mobile layout */
+@media screen and (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  ul {
-    display: flex;
-    background-color: black;
-    justify-content: right;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+
+  .menu-item {
+    margin: 10px 0;
   }
-  
-  ul > li {
-    list-style: none;
-    margin: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    
+}
+
+.menu-item:first-child {
+  color: red;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+/* Hamburger Menu Styles */
+.ham-menu {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-web {
+  display: flex;
+}
+
+@media screen and (max-width: 998px) {
+  .menu-web {
+    display: none;
   }
-  
-  ul > li:hover {
-    color: #f39c12;
+
+  .ham-menu {
+    display: block;
   }
-  
-  /* Mobile-friendly responsive layout */
-  @media screen and (max-width: 600px) {
-    ul {
-      flex-direction: column;
-      align-items: center;
-    }
-    ul > li {
-      margin: 10px 0;
-    }
-  }
-  
-  ul > li:first-child {
-    color: red;
-    font-weight: bold;
-    margin-right: auto;
-  }
+}
